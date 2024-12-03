@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GamerJamer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Logo animatie overlay -->
+  <div class="logo-intro">
+    <div class="logo-container">
+      <div class="logo-text">GamerJamer</div>
+      <img src="logo.png" alt="GamerJamer Logo" class="logo-image">
+    </div>
+  </div>
+
+  <header>
+    <div class="logo">GamerJamer</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="https://discord.gg/jn7gQT2k4p">Discord</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="video-gallery">
+      <h1>Featured Videos</h1>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/{VIDEO_ID}" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 GamerJamer. All rights reserved.</p>
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.querySelector('.logo-intro').classList.add('fade-out');
+      }, 5000); // Blijf 5 seconden zichtbaar voor fading
+    });
+  </script>
+</body>
+</html>
